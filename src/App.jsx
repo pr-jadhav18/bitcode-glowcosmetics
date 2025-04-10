@@ -4,14 +4,15 @@ import './App.css';
 import AppRoutes from './routes';
 import Footer from './components/Footer';
 import Header from './components/Header';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import ProductCard from './pages/ProductCard';
+ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
 
   return (
     <>
-      <Header/>
+      <Header />
         <AppRoutes/>
       <Footer/>
     </>

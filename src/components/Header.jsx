@@ -14,9 +14,9 @@ function Header() {
         <Nav className="me-auto text-dark">
           <Nav.Link href="/" className='text-dark fw-bold me-4' >Home</Nav.Link>
           <Nav.Link href="/shop"  className='text-dark fw-bold me-4'>Shop</Nav.Link>
-          <Nav.Link href="/aboutus"  className='text-dark fw-bold me-4'>Category</Nav.Link>
+          <Nav.Link href="/categories"  className='text-dark fw-bold me-4'>Category</Nav.Link>
           <Nav.Link href="/aboutus"  className='text-dark fw-bold me-4'>About Us</Nav.Link>
-          <Nav.Link href="/aboutus"  className='text-dark fw-bold me-4'>Contact Us</Nav.Link>
+          <Nav.Link href="/contact-us"  className='text-dark fw-bold me-4'>Contact Us</Nav.Link>
         </Nav>
       </Container>
     </Navbar>
