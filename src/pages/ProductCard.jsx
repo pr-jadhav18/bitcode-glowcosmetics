@@ -4,7 +4,13 @@ import { Card, Button, Col ,Container,Row} from "react-bootstrap";
 const ProductCard = () => {
  const Products = [
     { Name:"Lipstick", Image: "/Categories/lipstic.webp", Price:"100", Desc:"Long-lasting matte lipstick in bold shades." },
-    { Name:"Makeup Brush Set", Image:"/Categories/category-2.webp", Price:"200", Desc:"Premium quality brush set for flawless makeup application."}
+    { Name:"Makeup Brush Set", Image:"/prodCard/prodcard-1.webp", Price:"200", Desc:"Premium quality brush set for flawless makeup application."},
+    { Name:"Makeup Brush Set", Image:"/prodCard/prodcard-2.jpg", Price:"500", Desc:"Premium quality brush set for flawless makeup application."},
+    { Name:"Beauty product Set", Image:"/prodCard/prodcard-3.avif", Price:"300", Desc:"Premium quality brush set for flawless makeup application."},
+    { Name:"Primer", Image:"/prodCard/prodcard-4.avif", Price:"300", Desc:"Premium quality brush set for flawless makeup application."},
+    { Name:"Primer", Image:"/prodCard/prodcard-5.webp", Price:"500", Desc:"Premium quality brush set for flawless makeup application."},
+    { Name:"Primer", Image:"/prodCard/prodcard-6.webp", Price:"100", Desc:"Premium quality brush set for flawless makeup application."},
+    { Name:"Primer", Image:"/prodCard/prodcard-8.webp", Price:"150", Desc:"Premium quality brush set for flawless makeup application."},
  ]
 
   return (

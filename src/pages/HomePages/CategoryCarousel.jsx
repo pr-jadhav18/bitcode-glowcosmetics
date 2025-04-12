@@ -16,7 +16,6 @@ const CategoryCarousel = () => {
     { img: "/Categories/category-10.avif", label: "Sunscreen Lotion" },
   ];
 
-  // Split categories into chunks of 6 items each
   const chunkedCategories = [];
   for (let i = 0; i < categories.length; i += 6) {
     chunkedCategories.push(categories.slice(i, i + 6));
@@ -60,3 +59,5 @@ const CategoryCarousel = () => {
 };
 
 export default CategoryCarousel;
+
+ 
