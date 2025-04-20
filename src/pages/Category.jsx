@@ -1,9 +1,9 @@
 import React from 'react';
-import { Carousel, Col, Container, Image, Row } from 'react-bootstrap';
+import { Col, Container, Image, Row } from 'react-bootstrap';
 
 function Category() {
     return (
-        <>
+        <div className=''> 
             <Container className='mt-3 mb-3'>
                 <p className='text-center fw-bold gradient-text fs-2 '>Our Categories</p>
                 <Row>
@@ -71,7 +71,7 @@ function Category() {
 
                 </Row>
             </Container>
-        </>
+        </div>
     )
 }
 
