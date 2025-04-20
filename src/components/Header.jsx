@@ -16,7 +16,15 @@ function Header() {
           <Nav.Link href="/shop"  className='text-dark fw-bold me-4'>Shop</Nav.Link>
           <Nav.Link href="/categories"  className='text-dark fw-bold me-4'>Category</Nav.Link>
           <Nav.Link href="/aboutus"  className='text-dark fw-bold me-4'>About Us</Nav.Link>
-          <Nav.Link href="/contact-us"  className='text-dark fw-bold me-4'>Contact Us</Nav.Link>
+          <Nav.Link href="/contactus"  className='text-dark fw-bold me-4'>Contact Us</Nav.Link>
+        </Nav>
+        <Nav className="ms-auto">
+          <Nav.Link href="/profile" className="text-dark fs-5 me-3">
+            <i className="fas fa-user"></i>
+          </Nav.Link>
+          <Nav.Link href="/cart" className="text-dark fs-5">
+            <i className="fas fa-shopping-cart"></i>
+          </Nav.Link>
         </Nav>
       </Container>
     </Navbar>
