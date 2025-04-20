@@ -4,6 +4,7 @@ import { Carousel, Col, Container, Image, Row } from 'react-bootstrap';
 import CategoryCarousel from './HomePages/CategoryCarousel';
 import ProductCard from './ProductCard';
 import BigBanner from './HomePages/BigBanner';
+import ProductDis from './HomePages/ProductDis';
 
 
 function Home() {
@@ -13,6 +14,7 @@ function Home() {
       <CategoryCarousel/>
       <ProductCard/>
       <BigBanner/>
+      <ProductDis/>
    </>
   )
 }
