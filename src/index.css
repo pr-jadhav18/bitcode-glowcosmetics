@@ -25,7 +25,7 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  flex-direction: column; 
   min-width: 320px;
   min-height: 100vh;
 }
@@ -53,6 +53,16 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
+.gradient-text {
+  background: #2A7B9B;
+  background: linear-gradient(90deg, rgba(42, 123, 155, 1) 32%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 76%);
+   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
 
 @media (prefers-color-scheme: light) {
   :root {
