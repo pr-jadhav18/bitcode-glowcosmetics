@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Image } from 'react-bootstrap';
 
 function Header() {
+  const [cartItems,setCartItems]= useState([]);
+  
+  
   return (
     <Navbar  data-bs-theme="dark" expand="lg" className="w-100 fixed-top bg-info">
       <Container>
@@ -25,6 +28,7 @@ function Header() {
           <Nav.Link href="/cart" className="text-dark fs-5">
             <i className="fas fa-shopping-cart"></i>
           </Nav.Link>
+            <span style={{background:"white", height:"20px", width:"20px", borderRadius:"50%", position:"absolute", right:"103px", textAlign:"center"}}>{cartItems.length}</span>
         </Nav>
       </Container>
     </Navbar>
