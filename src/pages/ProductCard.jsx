@@ -1,16 +1,16 @@
 import React from "react";
 import { Card, Button, Col ,Container,Row} from "react-bootstrap";
 
-const ProductCard = () => {
+const ProductCard = ({addToCart}) => {
  const Products = [
-    { Name:"Lipstick", Image: "/Categories/lipstic.webp", Price:"100", Desc:"Long-lasting matte lipstick in bold shades." },
-    { Name:"Makeup Brush Set", Image:"/prodCard/prodcard-1.webp", Price:"200", Desc:"Premium quality brush set for flawless makeup application."},
-    { Name:"Makeup Brush Set", Image:"/prodCard/prodcard-2.jpg", Price:"500", Desc:"Premium quality brush set for flawless makeup application."},
-    { Name:"Beauty product Set", Image:"/prodCard/prodcard-3.avif", Price:"300", Desc:"Premium quality brush set for flawless makeup application."},
-    { Name:"Primer", Image:"/prodCard/prodcard-4.avif", Price:"300", Desc:"Premium quality brush set for flawless makeup application."},
-    { Name:"Primer", Image:"/prodCard/prodcard-5.webp", Price:"500", Desc:"Premium quality brush set for flawless makeup application."},
-    { Name:"Primer", Image:"/prodCard/prodcard-6.webp", Price:"100", Desc:"Premium quality brush set for flawless makeup application."},
-    { Name:"Primer", Image:"/prodCard/prodcard-8.webp", Price:"150", Desc:"Premium quality brush set for flawless makeup application."},
+    { id:1, Name:"Lipstick", Image: "/Categories/lipstic.webp", Price:"100", Desc:"Long-lasting matte lipstick in bold shades." },
+    { id:2, Name:"Makeup Brush Set", Image:"/prodCard/prodcard-1.webp", Price:"200", Desc:"Premium quality brush set for flawless makeup application."},
+    { id:3, Name:"Makeup Brush Set", Image:"/prodCard/prodcard-2.jpg", Price:"500", Desc:"Premium quality brush set for flawless makeup application."},
+    { id:4, Name:"Beauty product Set", Image:"/prodCard/prodcard-3.avif", Price:"300", Desc:"Premium quality brush set for flawless makeup application."},
+    { id:5, Name:"Primer", Image:"/prodCard/prodcard-4.avif", Price:"300", Desc:"Premium quality brush set for flawless makeup application."},
+    { id:6, Name:"Primer", Image:"/prodCard/prodcard-5.webp", Price:"500", Desc:"Premium quality brush set for flawless makeup application."},
+    { id:7, Name:"Primer", Image:"/prodCard/prodcard-6.webp", Price:"100", Desc:"Premium quality brush set for flawless makeup application."},
+    { id:8, Name:"Primer", Image:"/prodCard/prodcard-8.webp", Price:"150", Desc:"Premium quality brush set for flawless makeup application."},
  ]
 
   return (
@@ -37,7 +37,7 @@ const ProductCard = () => {
                     </Card.Text>
                     <div className="d-flex justify-content-between align-items-center mt-3">
                       <span className="fw-bold fs-5 text-success">₹{prod.Price}</span>
-                      <Button variant="dark" >
+                      <Button variant="dark" onClick={() => addToCart(prod)}>
                         Add to Cart
                       </Button>
                     </div>
