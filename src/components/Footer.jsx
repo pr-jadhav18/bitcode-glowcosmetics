@@ -17,10 +17,10 @@ function Footer() {
           <Col md={4} className="mb-3">
             <h5>Useful Links</h5>
             <Nav className="flex-column">
-              <Nav.Link href="#" className="text-white">Phone No.</Nav.Link>
-              <Nav.Link href="#" className="text-white">About</Nav.Link>
-              <Nav.Link href="#" className="text-white">Category</Nav.Link>
-              <Nav.Link href="#" className="text-white">Information</Nav.Link>
+              <Nav.Link href="/shop" className="text-white">Shop</Nav.Link>
+              <Nav.Link href="/categories" className="text-white">Category</Nav.Link>
+              <Nav.Link href="/aboutus" className="text-white">AboutUs</Nav.Link>
+              <Nav.Link href="/contactus" className="text-white">ContactUs</Nav.Link>
             </Nav>
           </Col>
 

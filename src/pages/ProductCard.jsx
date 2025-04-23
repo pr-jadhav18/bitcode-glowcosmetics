@@ -6,11 +6,11 @@ const ProductCard = ({addToCart}) => {
     { id:1, Name:"Lipstick", Image: "/Categories/lipstic.webp", Price:"100", Desc:"Long-lasting matte lipstick in bold shades." },
     { id:2, Name:"Makeup Brush Set", Image:"/prodCard/prodcard-1.webp", Price:"200", Desc:"Premium quality brush set for flawless makeup application."},
     { id:3, Name:"Makeup Brush Set", Image:"/prodCard/prodcard-2.jpg", Price:"500", Desc:"Premium quality brush set for flawless makeup application."},
-    { id:4, Name:"Beauty product Set", Image:"/prodCard/prodcard-3.avif", Price:"300", Desc:"Premium quality brush set for flawless makeup application."},
-    { id:5, Name:"Primer", Image:"/prodCard/prodcard-4.avif", Price:"300", Desc:"Premium quality brush set for flawless makeup application."},
-    { id:6, Name:"Primer", Image:"/prodCard/prodcard-5.webp", Price:"500", Desc:"Premium quality brush set for flawless makeup application."},
-    { id:7, Name:"Primer", Image:"/prodCard/prodcard-6.webp", Price:"100", Desc:"Premium quality brush set for flawless makeup application."},
-    { id:8, Name:"Primer", Image:"/prodCard/prodcard-8.webp", Price:"150", Desc:"Premium quality brush set for flawless makeup application."},
+    { id:4, Name:"Beauty product Set", Image:"/prodCard/prodcard-3.avif", Price:"300", Desc:"use for enhancing the beauty of womens  "},
+    { id:5, Name:"Primer", Image:"/prodCard/prodcard-4.avif", Price:"300", Desc:"A face primer goes underneath your makeup to help your makeup apply smoothly"},
+    { id:6, Name:"Primer", Image:"/prodCard/prodcard-5.webp", Price:"500", Desc:"to smooth the skin, fill in lines and wrinkles, and create a less porous surface for your makeup"},
+    { id:7, Name:"Primer", Image:"/prodCard/prodcard-6.webp", Price:"100", Desc:"it improves the overall look and feel of your face makeup"},
+    { id:8, Name:"Primer", Image:"/prodCard/prodcard-8.webp", Price:"150", Desc:"helps control shine, moisturize skin, prevent fading, enhance coverage, and even slow aging"},
  ]
 
   return (
