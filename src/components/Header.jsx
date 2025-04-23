@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, {  useState, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -6,6 +6,11 @@ import { Image } from 'react-bootstrap';
 
 function Header() {
   const [cartItems,setCartItems]= useState([]);
+   useEffect(() => {
+      const storedCart = localStorage.getItem('cartItems');
+      const localStorageData = storedCart ? JSON.parse(storedCart) : [];
+      setCartItems(localStorageData);
+    }, []);
   
   
   return (
