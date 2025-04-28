@@ -7,6 +7,8 @@ import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
 import Cart from './pages/Cart';
 import ThankYou from './pages/ThankYou';
+import Login from './pages/Login';
+import Register from './pages/Register';
 
 const AppRoutes = () => {
   return (
@@ -18,6 +20,9 @@ const AppRoutes = () => {
         <Route path='/contactus' element={<ContactUs/>}></Route>
         <Route path='/cart' element={<Cart/>}></Route>
         <Route path='/thankyou' element={<ThankYou/>}></Route>
+        <Route path='/login' element={<Login/>}></Route>
+        <Route path='/register' element={<Register/>}></Route>
+
 
         
     </Routes>
