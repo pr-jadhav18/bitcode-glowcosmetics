@@ -9,7 +9,7 @@ function ThankYou() {
         <Row className="justify-content-center text-center">
           <Col md={8} lg={6}>
             <img 
-              src="/images.png" // optional: add a success image if you have
+              src="/images.png" 
               alt="Success"
               style={{ width: '120px', marginBottom: '20px' }}
             />
