@@ -27,13 +27,13 @@ function Header() {
           <Nav.Link href="/contactus"  className='text-dark fw-bold me-4'>Contact Us</Nav.Link>
         </Nav>
         <Nav className="ms-auto">
-          <Nav.Link href="/profile" className="text-dark fs-5 me-3">
+          <Nav.Link href="/login" className="text-dark fs-5 me-3">
             <i className="fas fa-user"></i>
           </Nav.Link>
           <Nav.Link href="/cart" className="text-dark fs-5">
             <i className="fas fa-shopping-cart"></i>
           </Nav.Link>
-            <span style={{background:"white", height:"20px", width:"20px", borderRadius:"50%", position:"absolute", right:"103px", textAlign:"center"}}>{cartItems.length}</span>
+            <span style={{background:"white", height:"20px", width:"20px", borderRadius:"50%", position:"absolute", right:"123px", textAlign:"center"}}>{cartItems.length}</span>
         </Nav>
       </Container>
     </Navbar>
