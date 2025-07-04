@@ -1,21 +1,20 @@
+import { useEffect, useState } from 'react';
 import { Container, Carousel, Image } from 'react-bootstrap';
 
 const CategoryCarousel = () => {
-  const categories = [
-    { img: "/Categories/lipstic.webp", label: "Lipstick" },
-    { img: "/Categories/category-1.webp", label: "Serum" },
-    { img: "/Categories/category-2.webp", label: "Makeup Brush" },
-    { img: "/Categories/category-3.webp", label: "Makeup Palette" },
-    { img: "/Categories/category-4.jpg", label: "Powder" },
-    { img: "/Categories/category-5.webp", label: "Nail Glitter" },
-    { img: "/Categories/category-6.avif", label: "EyeShadow Palette" },
-    { img: "/Categories/category-7.webp", label: "Concealer" },
-    { img: "/Categories/category-8.jpg", label: "Foundation" },
-    { img: "/Categories/category-9.webp", label: "Primer" },
-    { img: "/Categories/category-11.webp", label: "Eye Liner" },
-    { img: "/Categories/category-10.avif", label: "Sunscreen Lotion" },
-  ];
+ const [categories,setCategories] = useState([]);
 
+ async function getCategory() {
+         var url = "http://localhost:8000/api/category-list";
+         var response = await fetch(url);
+         var result = await response.json();
+         setCategories(result);
+   }
+
+   useEffect(()=>{
+    getCategory();
+   },[])
+  
   const chunkedCategories = [];
   for (let i = 0; i < categories.length; i += 6) {
     chunkedCategories.push(categories.slice(i, i + 6));
@@ -31,7 +30,7 @@ const CategoryCarousel = () => {
               {group.map((cat, idx) => (
                 <div key={idx} className="text-center mx-3">
                   <Image
-                    src={cat.img}
+                    src={`http://localhost:8000/uploads/${cat.image}`}
                     roundedCircle
                     style={{
                       width: "150px",
@@ -46,7 +45,7 @@ const CategoryCarousel = () => {
                       marginTop: "10px",
                     }}
                   >
-                    {cat.label}
+                    {cat.name}
                   </p>
                 </div>
               ))}
